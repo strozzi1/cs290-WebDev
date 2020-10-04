@@ -1,0 +1,102 @@
+
+
+<div class="row">
+  <div class="leftcolumn">
+
+    {{#each entry}}
+      {{> entryCard}}
+    {{/each}}
+
+  </div>
+  <div class="rightcolumn">
+    <div class="rightcard">
+      <h2>Sensei</h2>
+      <img class="fakeimg" src="http://web.engr.oregonstate.edu/~hessro/static/media/rob.14df6f20.jpg"><br>
+      <p>This is a running log. Share your log for others to see!</p>
+    </div>
+
+    <div class="rightcard">
+      <h3>Code Monkeys</h3>
+      <img class="fakeimg" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/19731996_1336249063139599_7982864283696983941_n.jpg?_nc_cat=0&oh=481143e1522898b40c81861362503516&oe=5BA51044">Evan Newman<br>
+      <img class="fakeimg" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/18619994_228775594276208_6489537415462311150_n.jpg?_nc_cat=0&oh=dad61a9c7b324fae8899f3edb528342e&oe=5BBD5AAD">Daniel Safarov<br>
+      <img class="fakeimg" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/32151505_1911646335546076_2578894949466505216_n.jpg?_nc_cat=0&oh=e873327f1c5e9eb9e8a22876c44b3efa&oe=5BA7BF8C">Joshua Strozzi<br>
+    </div>
+
+    <div class="rightcard">
+      <a href="https://www.flickr.com/search"><h3>Click For Other Implementations</h3></a>
+      <p>Love Us.</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="footer">
+  <h2>(C) 2018 All Rights Reserved. J.E.S is a product of Hard Working Boys. </h2>
+  <h2>Proudly made at OSU.</h2>
+</div>
+
+<button type="button" id="create-log">
+  <i class="fa fa-edit"></i>
+</button>
+
+<button type="button" id="clear-log">
+  <i class="fa fa-window-close"></i>
+</button>
+
+
+<div id="modal-backdrop" class="hidden"></div>
+<div id="create-log-modal" class="hidden">
+  <div class="modal-dialog">
+
+    <div class="modal-header">
+      <h3>Record a Log</h3>
+      <button type="button" class="modal-close-button">&times;</button>
+    </div>
+
+    <div class="modal-body">
+      <div class="log-input-element">
+        <label for="log-text-input">Title</label>
+        <input type="text" id="log-attribution-input">
+      </div>
+
+      <div class = "log-input-element">
+          <label for = "log-date-input">Date</label>
+          <input type = "text" id="log-date-input">
+      </div>
+
+      <div class="log-input-element">
+        <label for="log-text-input">Entry</label>
+        <textarea id="log-text-input"></textarea>
+      </div>
+
+      <div class="log-input-element">
+        <label for="log-miles-input">Miles</label>
+        <input type="text" id="log-miles-input">
+      </div>
+
+    </div>
+
+    <div class="modal-footer">
+      <button type="button" class="modal-cancel-button">Cancel</button>
+      <button type="button" class="modal-accept-button">Create Log</button>
+    </div>
+
+  </div>
+</div>
+
+<div id="clear-log-modal" class="hidden">
+  <div class="modal-dialog">
+
+    <div class="modal-header">
+      <h3>Delete all entries?</h3>
+      <button type="button" class="modal-close-button">&times;</button>
+    </div>
+
+    <div class="modal-footer">
+      <button type="button" class="modal-cancel-button">No</button>
+      <button type="button" class="modal-accept-button">Yes</button>
+    </div>
+
+  </div>
+</div>
+

@@ -1,0 +1,238 @@
+/*
+ * Add your CSS styles to this file.
+ */
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: #1dcaff;
+}
+h1 {
+    background-color: #1dcaff;
+    color: white;
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', roboto;
+    font-weight: 400;
+}
+
+a:focus{
+    color: #1dcaff;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background-color: lightgray;
+}
+
+ .sitetitle{
+     color: white;
+     padding: 0;
+ }
+
+
+ .navlist{
+     display: block;
+     list-style-type: none;
+     margin:0;
+     padding:0;
+     background-color: white;
+    
+
+ }
+ .navlink{
+     height: 30px;
+     line-height: 30px;
+     font-family: 'Roboto', roboto;
+ }
+ 
+ .navitem{
+    height: 30px;
+    line-height: 30px; 
+    display: inline-block;
+ }
+
+ li a{
+     display: block;
+     padding: 0 20px;
+     color: black;
+     text-decoration: none;
+     text-align: center;
+ }
+ 
+
+/*
+ li a:hover{
+     background-color: lightgray;
+ }*/
+
+ nav ul li{
+     background-color: white;
+ }
+
+ p a{
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+ }
+
+
+.navbar .navbard-search{
+    float: right;
+}
+
+.active{
+    border-bottom: 3px  solid #1dcaff;
+}
+
+#create-twit-button{
+    border-radius: 50%;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    height: 50px;
+    width: 50px;
+    box-shadow: 5px 5px 20px grey;
+    font-size: 25px;
+ }
+
+ #create-twit-button.i{
+     font-size: 30px;
+ }
+ /*
+ .svg-inline--fa{
+     font-size: 1.5em;
+ }
+ */
+ #create-twit-button:hover{
+    color: white;
+    background-color: #1dcaff;
+    height: 53px;
+    width: 53px;
+    box-shadow: 10px 10px 20px grey;
+    font-size: 26px;
+
+ }
+
+ .navbar-search{
+     float:right;
+ }
+ #navbar-search-button{
+     border: none;
+     background: none;
+     padding: 0;
+
+     margin-top: 5px;
+     margin-right: 3px;
+ }
+ #navbar-search-button:hover{
+     color: #1dcaff;
+ }
+
+ #navbar-search-input{
+    background-color: lightgray;
+     margin-top: 3px;
+     font-size: 17px;
+     border: 1px solid #e0e0e0;
+     padding: 3px
+ }
+ #navbar-search-input:focus{
+    background-color: white;
+ }
+
+ .twit-container{
+     display: flex;
+     min-height: 400px;
+     margin:5px;
+     padding: 10px;
+     /*border: 4px solid black;
+     flex-direction: column;*/
+     flex-wrap: wrap;
+     margin-left: 5%;
+ }
+
+ .twit{
+     height: 100px;
+     margin: 10px 5px;
+     padding: 10px;
+     /*border: 2px solid black;
+     border-color: black;*/
+     background-color: white;
+     flex: 0 30%;
+     max-width: 400px;
+     min-width: 200px;
+     display: inline-flex;
+     align-content: flex-start;
+    
+ }
+ .twit-text{
+    font-size:15px;
+    font-weight: 400;
+    font-family: "Segoe UI",Arial,sans-serif;
+    margin: 0px;
+    margin-left: 10px;
+ }
+
+ .twit-icon{
+    display:inline-block;
+    vertical-align: top;
+}
+.twit-content{
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+}
+
+.twit-attribution{
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+ /* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: grey; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: grey; 
+}
+
+@media(max-width: 525px){
+    .navlist{
+        display: block;
+        flex-direction: column;
+        display: inline-flex;
+        width:100%;
+    }
+    .navbar-search{
+        text-align:center;
+    }
+
+}

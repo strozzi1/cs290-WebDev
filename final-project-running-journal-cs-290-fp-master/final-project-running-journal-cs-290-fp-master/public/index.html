@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>This is my website</title>
+ <link rel="stylesheet" href="/style.css" media="screen">
+
+   <!-- This script incorporates SVG icons from Font Awesome: http://fontawesome.com/ -->
+   <script src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" defer></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.runtime.js" defer></script>
+   <!-- <script src="/entryTemplate.js" charset="utf-8" defer></script> -->
+   <script src="/entryCardTemplate.js" charset="utf-8" defer></script>
+   <script src="/index.js" charset="utf-8" defer></script>
+</head>
+<body>
+
+
+<div class="header">
+  <h2>Forward Progress</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <div class="delete-button">
+        <i class="fas fa-times"></i>
+      </div>
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+
+<button type="button" id="create-log">
+  <i class="fa fa-edit"></i>
+</button>
+
+<div id="modal-backdrop" class="hidden"></div>
+<div id="create-log-modal" class="hidden">
+  <div class="modal-dialog">
+
+    <div class="modal-header">
+      <h3>Record a Log</h3>
+      <button type="button" class="modal-close-button">&times;</button>
+    </div>
+
+    <div class="modal-body">
+      <div class="log-input-element">
+        <label for="log-text-input">Title</label>
+        <input type="text" id="log-attribution-input">
+      </div>
+
+      <div class = "log-input-element">
+          <label for = "log-date-input">Date</label>
+          <input type = "text" id="log-date-input">
+      </div>
+
+      <div class="log-input-element">
+        <label for="log-text-input">Entry</label>
+        <textarea id="log-text-input"></textarea>
+      </div>
+
+      <div class="log-input-element">
+        <label for="log-miles-input">Miles</label>
+        <input type="text" id="log-miles-input">
+      </div>
+
+    </div>
+
+    <div class="modal-footer">
+      <button type="button" class="modal-cancel-button">Cancel</button>
+      <button type="button" class="modal-accept-button">Create Log</button>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
